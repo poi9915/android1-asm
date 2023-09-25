@@ -7,11 +7,15 @@
     tools:context=".WelcomeActivity"
     android:orientation="vertical"
     android:gravity="center"
+    android:background="@color/white"
     >
+
     <ImageView
-        android:layout_width="300dp"
+        android:id="@+id/imgLogo"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_width="320dp"
         android:layout_height="match_parent"
-        android:src="@drawable/logo_fpt_polytechnic_inkythuatso"
-        />
+        android:src="@drawable/logo_fpt_polytechnic_inkythuatso" />
 
 </LinearLayout>

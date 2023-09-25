@@ -2,8 +2,14 @@
     <!-- Base application theme. -->
     <style name="Base.Theme.Asm_ph45090" parent="Theme.Material3.DayNight.NoActionBar">
         <!-- Customize your light theme here. -->
-        <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
+         <item name="colorPrimary">@color/bt1_pink</item>
+        <item name="colorAccent">@color/white</item>
     </style>
+<!--    <style name="Button.Pink" parent="ThemeOverlay.AppCompat">-->
+
+<!--        <item name="colorPrimary">@color/bt1_pink</item>-->
+
+<!--    </style>-->
 
     <style name="Theme.Asm_ph45090" parent="Base.Theme.Asm_ph45090" />
 </resources>

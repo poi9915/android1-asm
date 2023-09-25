@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".PbActivity"
+
+    android:orientation="vertical">
+
+    <com.google.android.material.appbar.MaterialToolbar
+        android:id="@+id/topAppBarPB"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="?attr/colorPrimary"
+        app:title="Phòng ban"
+        app:titleTextColor="@color/white">
+
+        <ImageButton
+            android:id="@+id/btn_searchPb"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end"
+            android:layout_marginRight="20dp"
+            android:background="@color/bt1_pink"
+            android:contentDescription="search"
+            android:src="@drawable/ic_search"
+            tools:ignore="TouchTargetSizeCheck"
+
+            />
+
+        <!-- Nội dung khác của thanh công cụ -->
+    </com.google.android.material.appbar.MaterialToolbar>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:background="@color/white"
+            >
+            <com.google.android.material.card.MaterialCardView
+                android:id="@+id/cardPb1"
+                android:layout_width="290dp"
+                android:layout_height="70dp"
+                app:cardElevation="8dp"
+                app:cardCornerRadius="16dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="50dp"
+
+
+                >
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+                    <!--                        Nôi dung thẻ 1-->
+                    <ImageView
+                        android:layout_marginLeft="10dp"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:src="@drawable/ic_apartment"
+                        android:layout_gravity="center"/>
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_weight="2"
+                        android:layout_height="match_parent"
+                        android:text="Hành chính"
+                        android:textSize="16sp"
+                        android:textStyle="bold"
+                        android:gravity="center"/>
+                </LinearLayout>
+
+            </com.google.android.material.card.MaterialCardView>
+            <com.google.android.material.card.MaterialCardView
+                android:id="@+id/cardPb2"
+                android:layout_width="290dp"
+                android:layout_marginTop="50dp"
+                android:layout_height="70dp"
+                app:cardElevation="8dp"
+                app:cardCornerRadius="16dp"
+                android:layout_gravity="center"
+
+
+
+                >
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+                    <!--                        Nôi dung thẻ 1-->
+                    <ImageView
+                        android:layout_marginLeft="10dp"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:src="@drawable/ic_apartment"
+                        android:layout_gravity="center"/>
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_weight="2"
+                        android:layout_height="match_parent"
+                        android:text="Nhân sự"
+                        android:textSize="16sp"
+                        android:textStyle="bold"
+                        android:gravity="center"/>
+                </LinearLayout>
+
+            </com.google.android.material.card.MaterialCardView>
+            <com.google.android.material.card.MaterialCardView
+                android:id="@+id/cardPb3"
+                android:layout_width="290dp"
+                android:layout_height="70dp"
+                android:layout_marginTop="50dp"
+                app:cardElevation="8dp"
+                app:cardCornerRadius="16dp"
+                android:layout_gravity="center"
+
+
+
+                >
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+                    <!--                        Nôi dung thẻ 1-->
+                    <ImageView
+                        android:layout_marginLeft="10dp"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:src="@drawable/ic_apartment"
+                        android:layout_gravity="center"/>
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_weight="2"
+                        android:layout_height="match_parent"
+                        android:text="Đào tạo"
+                        android:textSize="16sp"
+                        android:textStyle="bold"
+                        android:gravity="center"/>
+                </LinearLayout>
+
+            </com.google.android.material.card.MaterialCardView>
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+</LinearLayout>
