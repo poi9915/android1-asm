@@ -1,3 +1,30 @@
 <resources>
     <string name="app_name">asm_ph45090</string>
+<!--Ten chuc nang-->
+    <string name="menu_ls1">Phòng ban</string>
+    <string name="menu_ls2">Nhân viên</string>
+<!--Ten phong ban-->
+    <string name="pb_ls1">Nhân sự</string>
+    <string name="pb_ls2">Hành chính</string>
+    <string name="pb_ls3">Đào tạo</string>
+<!--page name-->
+    <string name="pg_1">Phòng ban</string>
+    <string name="pg_2">Nhân viên</string>
+<!--Thong tin nhan vien (temp)!!!!-->
+    <string name="nv1_ma">NV1</string>
+    <string name="nv1_hoTen">Nguyen Van B</string>
+    <string name="nv1_phongBan">Hành chính</string>
+
+    <string name="nv2_ma">NV2</string>
+    <string name="nv2_hoTen">Nguyen Van C</string>
+    <string name="nv2_phongBan">Đào tạo</string>
+
+    <string name="nv3_ma">NV3</string>
+    <string name="nv3_hoTen">Nguyen Van D</string>
+    <string name="nv3_phongBan">Nhân sự</string>
+
+    <string name="nv4_ma">NV4</string>
+    <string name="nv4_hoTen">Nguyen Van E</string>
+    <string name="nv4_phongBan">Hành chính</string>
+
 </resources>

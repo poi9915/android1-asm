@@ -2,4 +2,6 @@
 <resources>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
+    <color name="bt1_pink">#6200EE</color>
+    <color name="bt2_pink">#EED4FA</color>
 </resources>
