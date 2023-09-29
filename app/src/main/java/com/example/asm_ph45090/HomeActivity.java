@@ -29,15 +29,14 @@ public class HomeActivity extends AppCompatActivity {
         cardNs.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(HomeActivity.this , NsActivity.class);
-                startActivity(intent);
+
+                startActivity(new Intent(HomeActivity.this  , NsActivity.class));
             }
         });
         cardPb.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(HomeActivity.this , PbActivity.class);
-                startActivity(intent);
+                startActivity(new Intent(HomeActivity.this , PbActivity.class));
             }
         });
     }

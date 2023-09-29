@@ -22,7 +22,7 @@
             android:layout_gravity="end"
             android:layout_marginRight="20dp"
             android:background="@color/bt1_pink"
-            android:contentDescription="search"
+            android:contentDescription="add"
             android:src="@drawable/ic_search"
             tools:ignore="TouchTargetSizeCheck"
 
@@ -63,7 +63,8 @@
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:orientation="horizontal">
+                android:orientation="horizontal"
+                android:baselineAligned="false">
                 <!--                Text-->
                 <LinearLayout
                     android:layout_width="0dp"
@@ -77,8 +78,8 @@
                         android:layout_height="0dp"
                         android:layout_weight="1"
                         android:text="Mã NV : NV1"
-                        android:textSize="20sp"
-                        android:textColor="@color/bt1_pink"/>
+                        android:textColor="@color/bt1_pink"
+                        android:textSize="20sp" />
 
                     <TextView
                         android:layout_width="match_parent"
@@ -99,54 +100,75 @@
                     android:layout_height="match_parent"
                     android:layout_weight="2">
 
-                    <com.google.android.material.floatingactionbutton.FloatingActionButton
-                        android:id="@+id/btnEditPer"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_marginStart="4dp"
-                        android:src="@drawable/ic_edit"
-                        app:fabCustomSize="38dp"
-                        app:fabSize="mini"
-                        app:layout_constraintBottom_toBottomOf="parent"
-                        app:layout_constraintStart_toStartOf="parent"
-                        app:layout_constraintTop_toTopOf="parent"
-                        android:contentDescription="add NS"
-                        />
+                    <!--                    <com.google.android.material.floatingactionbutton.FloatingActionButton-->
+                    <!--                        android:id="@+id/btnEditPer"-->
+                    <!--                        android:layout_width="wrap_content"-->
+                    <!--                        android:layout_height="wrap_content"-->
+                    <!--                        android:layout_marginStart="4dp"-->
+                    <!--                        android:src="@drawable/ic_edit"-->
+                    <!--                        app:fabCustomSize="38dp"-->
+                    <!--                        app:fabSize="mini"-->
+                    <!--                        app:layout_constraintBottom_toBottomOf="parent"-->
+                    <!--                        app:layout_constraintStart_toStartOf="parent"-->
+                    <!--                        app:layout_constraintTop_toTopOf="parent"-->
+                    <!--                        android:contentDescription="add NS"-->
+                    <!--                        />-->
 
-                    <com.google.android.material.floatingactionbutton.FloatingActionButton
-                        android:id="@+id/btnRemovePer"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_marginStart="68dp"
+                    <ImageButton
+                        android:id="@+id/btnRemove1"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:layout_marginStart="12dp"
+                        android:background="?attr/selectableItemBackgroundBorderless"
+                        android:contentDescription="sit"
+                        android:elevation="10dp"
                         android:src="@drawable/ic_delete_forever"
-                        app:fabCustomSize="38dp"
-                        app:fabSize="mini"
                         app:layout_constraintBottom_toBottomOf="parent"
+
+                        app:layout_constraintCircleRadius="20dp"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0.0"
+                        app:layout_constraintStart_toEndOf="@+id/btnEdit1"
+                        app:layout_constraintTop_toTopOf="parent"
+                        tools:ignore="TouchTargetSizeCheck" />
+
+                    <ImageButton
+                        android:id="@+id/btnEdit1"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:layout_marginStart="16dp"
+                        android:background="?attr/selectableItemBackgroundBorderless"
+                        android:contentDescription="sit"
+
+                        android:elevation="10dp"
+                        android:src="@drawable/ic_edit"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintCircleRadius="20dp"
+
                         app:layout_constraintStart_toStartOf="parent"
                         app:layout_constraintTop_toTopOf="parent"
-                        android:contentDescription="remove NS"/>
+                        tools:ignore="TouchTargetSizeCheck" />
 
                 </androidx.constraintlayout.widget.ConstraintLayout>
             </LinearLayout>
 
         </com.google.android.material.card.MaterialCardView>
+
         <com.google.android.material.card.MaterialCardView
             android:id="@+id/cardPb2"
             android:layout_width="330dp"
             android:layout_height="100dp"
             android:layout_gravity="center"
-            android:layout_marginTop="50dp"
+            android:layout_marginTop="30dp"
             app:cardCornerRadius="16dp"
-            app:cardElevation="8dp"
-
-
-            >
+            app:cardElevation="8dp">
 
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:orientation="horizontal">
-                <!--                Text-->
+                android:orientation="horizontal"
+                android:baselineAligned="false">
+
                 <LinearLayout
                     android:layout_width="0dp"
                     android:layout_height="match_parent"
@@ -159,8 +181,8 @@
                         android:layout_height="0dp"
                         android:layout_weight="1"
                         android:text="Mã NV : NV1"
-                        android:textSize="20sp"
-                        android:textColor="@color/bt1_pink"/>
+                        android:textColor="@color/bt1_pink"
+                        android:textSize="20sp" />
 
                     <TextView
                         android:layout_width="match_parent"
@@ -175,49 +197,58 @@
                         android:text="Phòng ban : Hành chính" />
 
                 </LinearLayout>
-                <!--                buttom-->
+
                 <androidx.constraintlayout.widget.ConstraintLayout
                     android:layout_width="0dp"
                     android:layout_height="match_parent"
                     android:layout_weight="2">
 
-                    <com.google.android.material.floatingactionbutton.FloatingActionButton
-                        android:id="@+id/btnEditPer2"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_marginStart="4dp"
-                        android:src="@drawable/ic_edit"
-                        app:fabCustomSize="38dp"
-                        app:fabSize="mini"
-                        app:layout_constraintBottom_toBottomOf="parent"
-                        app:layout_constraintStart_toStartOf="parent"
-                        app:layout_constraintTop_toTopOf="parent"
-                        android:contentDescription="add NS"
-                        />
-
-                    <com.google.android.material.floatingactionbutton.FloatingActionButton
-                        android:id="@+id/btnRemovePer2"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_marginStart="68dp"
+                    <ImageButton
+                        android:id="@+id/btnRemove2"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:layout_marginStart="12dp"
+                        android:background="?attr/selectableItemBackgroundBorderless"
+                        android:contentDescription="sit"
+                        android:elevation="10dp"
                         android:src="@drawable/ic_delete_forever"
-                        app:fabCustomSize="38dp"
-                        app:fabSize="mini"
                         app:layout_constraintBottom_toBottomOf="parent"
+
+                        app:layout_constraintCircleRadius="20dp"
+
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0.0"
+                        app:layout_constraintStart_toEndOf="@+id/btnEdit2"
+                        app:layout_constraintTop_toTopOf="parent"
+                        tools:ignore="TouchTargetSizeCheck" />
+
+                    <ImageButton
+                        android:id="@+id/btnEdit2"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:layout_marginStart="16dp"
+                        android:background="?attr/selectableItemBackgroundBorderless"
+                        android:contentDescription="sit"
+                        android:elevation="10dp"
+                        android:src="@drawable/ic_edit"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintCircleRadius="20dp"
+
                         app:layout_constraintStart_toStartOf="parent"
                         app:layout_constraintTop_toTopOf="parent"
-                        android:contentDescription="remove NS"/>
+                        tools:ignore="TouchTargetSizeCheck" />
 
                 </androidx.constraintlayout.widget.ConstraintLayout>
             </LinearLayout>
 
         </com.google.android.material.card.MaterialCardView>
+
         <com.google.android.material.card.MaterialCardView
             android:id="@+id/cardPb3"
             android:layout_width="330dp"
             android:layout_height="100dp"
             android:layout_gravity="center"
-            android:layout_marginTop="50dp"
+            android:layout_marginTop="30dp"
             app:cardCornerRadius="16dp"
             app:cardElevation="8dp"
 
@@ -227,7 +258,8 @@
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:orientation="horizontal">
+                android:orientation="horizontal"
+                android:baselineAligned="false">
                 <!--                Text-->
                 <LinearLayout
                     android:layout_width="0dp"
@@ -241,8 +273,8 @@
                         android:layout_height="0dp"
                         android:layout_weight="1"
                         android:text="Mã NV : NV1"
-                        android:textSize="20sp"
-                        android:textColor="@color/bt1_pink"/>
+                        android:textColor="@color/bt1_pink"
+                        android:textSize="20sp" />
 
                     <TextView
                         android:layout_width="match_parent"
@@ -263,43 +295,52 @@
                     android:layout_height="match_parent"
                     android:layout_weight="2">
 
-                    <com.google.android.material.floatingactionbutton.FloatingActionButton
-                        android:id="@+id/btnEditPer3"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_marginStart="4dp"
-                        android:src="@drawable/ic_edit"
-                        app:fabCustomSize="38dp"
-                        app:fabSize="mini"
-                        app:layout_constraintBottom_toBottomOf="parent"
-                        app:layout_constraintStart_toStartOf="parent"
-                        app:layout_constraintTop_toTopOf="parent"
-                        android:contentDescription="add NS"
-                        />
-
-                    <com.google.android.material.floatingactionbutton.FloatingActionButton
-                        android:id="@+id/btnRemovePer3"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_marginStart="68dp"
+                    <ImageButton
+                        android:id="@+id/btnRemove3"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:layout_marginStart="12dp"
+                        android:background="?attr/selectableItemBackgroundBorderless"
+                        android:contentDescription="sit"
+                        android:elevation="10dp"
                         android:src="@drawable/ic_delete_forever"
-                        app:fabCustomSize="38dp"
-                        app:fabSize="mini"
                         app:layout_constraintBottom_toBottomOf="parent"
+
+                        app:layout_constraintCircleRadius="20dp"
+
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0.0"
+                        app:layout_constraintStart_toEndOf="@+id/btnEdit3"
+                        app:layout_constraintTop_toTopOf="parent"
+                        tools:ignore="TouchTargetSizeCheck" />
+
+                    <ImageButton
+                        android:id="@+id/btnEdit3"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:layout_marginStart="16dp"
+                        android:background="?attr/selectableItemBackgroundBorderless"
+                        android:contentDescription="sit"
+                        android:elevation="10dp"
+                        android:src="@drawable/ic_edit"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintCircleRadius="20dp"
+
                         app:layout_constraintStart_toStartOf="parent"
                         app:layout_constraintTop_toTopOf="parent"
-                        android:contentDescription="remove NS"/>
+                        tools:ignore="TouchTargetSizeCheck" />
 
                 </androidx.constraintlayout.widget.ConstraintLayout>
             </LinearLayout>
 
         </com.google.android.material.card.MaterialCardView>
+
         <com.google.android.material.card.MaterialCardView
             android:id="@+id/cardPb4"
             android:layout_width="330dp"
             android:layout_height="100dp"
             android:layout_gravity="center"
-            android:layout_marginTop="50dp"
+            android:layout_marginTop="30dp"
             app:cardCornerRadius="16dp"
             app:cardElevation="8dp"
 
@@ -309,7 +350,8 @@
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:orientation="horizontal">
+                android:orientation="horizontal"
+                android:baselineAligned="false">
                 <!--                Text-->
                 <LinearLayout
                     android:layout_width="0dp"
@@ -323,8 +365,8 @@
                         android:layout_height="0dp"
                         android:layout_weight="1"
                         android:text="Mã NV : NV1"
-                        android:textSize="20sp"
-                        android:textColor="@color/bt1_pink"/>
+                        android:textColor="@color/bt1_pink"
+                        android:textSize="20sp" />
 
                     <TextView
                         android:layout_width="match_parent"
@@ -345,32 +387,40 @@
                     android:layout_height="match_parent"
                     android:layout_weight="2">
 
-                    <com.google.android.material.floatingactionbutton.FloatingActionButton
-                        android:id="@+id/btnEditPer4"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_marginStart="4dp"
-                        android:src="@drawable/ic_edit"
-                        app:fabCustomSize="38dp"
-                        app:fabSize="mini"
-                        app:layout_constraintBottom_toBottomOf="parent"
-                        app:layout_constraintStart_toStartOf="parent"
-                        app:layout_constraintTop_toTopOf="parent"
-                        android:contentDescription="add NS"
-                        />
-
-                    <com.google.android.material.floatingactionbutton.FloatingActionButton
-                        android:id="@+id/btnRemovePer4"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_marginStart="68dp"
+                    <ImageButton
+                        android:id="@+id/btnRemove4"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:layout_marginStart="12dp"
+                        android:background="?attr/selectableItemBackgroundBorderless"
+                        android:contentDescription="sit"
+                        android:elevation="10dp"
                         android:src="@drawable/ic_delete_forever"
-                        app:fabCustomSize="38dp"
-                        app:fabSize="mini"
                         app:layout_constraintBottom_toBottomOf="parent"
+
+                        app:layout_constraintCircleRadius="20dp"
+
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0.0"
+                        app:layout_constraintStart_toEndOf="@+id/btnEdit4"
+                        app:layout_constraintTop_toTopOf="parent"
+                        tools:ignore="TouchTargetSizeCheck" />
+
+                    <ImageButton
+                        android:id="@+id/btnEdit4"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:layout_marginStart="16dp"
+                        android:background="?attr/selectableItemBackgroundBorderless"
+                        android:contentDescription="sit"
+                        android:elevation="10dp"
+                        android:src="@drawable/ic_edit"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintCircleRadius="20dp"
+
                         app:layout_constraintStart_toStartOf="parent"
                         app:layout_constraintTop_toTopOf="parent"
-                        android:contentDescription="remove NS"/>
+                        tools:ignore="TouchTargetSizeCheck" />
 
                 </androidx.constraintlayout.widget.ConstraintLayout>
             </LinearLayout>

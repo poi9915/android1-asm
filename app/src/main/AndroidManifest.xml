@@ -21,11 +21,15 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".LoginActivity"/>
-        <activity android:name=".SignUpActivity"/>
-        <activity android:name=".HomeActivity"/>
-        <activity android:name=".NsActivity" android:parentActivityName=".HomeActivity"/>
-        <activity android:name=".PbActivity" android:parentActivityName=".HomeActivity"/>
+        <activity android:name=".LoginActivity" />
+        <activity android:name=".SignUpActivity" />
+        <activity android:name=".HomeActivity" />
+        <activity
+            android:name=".NsActivity"
+            android:parentActivityName=".HomeActivity" />
+        <activity
+            android:name=".PbActivity"
+            android:parentActivityName=".HomeActivity" />
 
     </application>
 

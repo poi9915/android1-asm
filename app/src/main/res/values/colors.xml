@@ -4,4 +4,5 @@
     <color name="white">#FFFFFFFF</color>
     <color name="bt1_pink">#9C23B0</color>
     <color name="bt2_pink">#EED4FA</color>
+    <color name="bt_blue">#3730FE</color>
 </resources>
