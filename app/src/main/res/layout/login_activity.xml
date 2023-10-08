@@ -46,22 +46,19 @@
             android:gravity="center_vertical"
             android:orientation="vertical">
             <com.google.android.material.textfield.TextInputLayout
-                android:id="@+id/txtUserName"
+                android:id="@+id/etUserName"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-
                 android:layout_marginBottom="30dp"
                 android:hint="UserName"
-
                 >
-
                 <com.google.android.material.textfield.TextInputEditText
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content" />
 
             </com.google.android.material.textfield.TextInputLayout>
             <com.google.android.material.textfield.TextInputLayout
-                android:id="@+id/txtPassWord"
+                android:id="@+id/etPassWord"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:hint="Password"
@@ -78,7 +75,7 @@
             </com.google.android.material.textfield.TextInputLayout>
 
             <CheckBox
-                android:id="@+id/chkRemPass"
+                android:id="@+id/cbRemMe"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="20dp"

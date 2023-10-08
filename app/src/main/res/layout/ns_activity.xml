@@ -10,6 +10,7 @@
     <com.google.android.material.appbar.MaterialToolbar
         android:id="@+id/topAppBarNS"
         android:layout_width="match_parent"
+
         android:layout_height="?attr/actionBarSize"
         android:background="?attr/colorPrimary"
         app:title="Nhân sự"
@@ -139,12 +140,10 @@
                         android:layout_marginStart="16dp"
                         android:background="?attr/selectableItemBackgroundBorderless"
                         android:contentDescription="sit"
-
                         android:elevation="10dp"
                         android:src="@drawable/ic_edit"
                         app:layout_constraintBottom_toBottomOf="parent"
                         app:layout_constraintCircleRadius="20dp"
-
                         app:layout_constraintStart_toStartOf="parent"
                         app:layout_constraintTop_toTopOf="parent"
                         tools:ignore="TouchTargetSizeCheck" />
