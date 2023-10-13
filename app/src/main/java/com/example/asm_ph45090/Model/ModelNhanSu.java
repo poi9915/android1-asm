@@ -1,4 +1,4 @@
-package com.example.asm_ph45090;
+package com.example.asm_ph45090.Model;
 
 public class ModelNhanSu {
     int id;
@@ -46,5 +46,15 @@ public class ModelNhanSu {
 
     public void setPhongBan(String phongBan) {
         PhongBan = phongBan;
+    }
+
+    @Override
+    public String toString() {
+        return "ModelNhanSu{" +
+                "id=" + id +
+                ", MaNV='" + MaNV + '\'' +
+                ", HoTen='" + HoTen + '\'' +
+                ", PhongBan='" + PhongBan + '\'' +
+                '}';
     }
 }

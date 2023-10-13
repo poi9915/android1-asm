@@ -16,34 +16,33 @@
         app:title="Nhân sự"
         app:titleTextColor="@color/white">
 
-        <ImageButton
-            android:id="@+id/btn_searchNS"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="end"
-            android:layout_marginRight="20dp"
-            android:background="@color/bt1_pink"
-            android:contentDescription="add"
-            android:src="@drawable/ic_search"
-            tools:ignore="TouchTargetSizeCheck"
+<!--        <ImageButton-->
+<!--            android:id="@+id/btn_searchNS"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_gravity="end"-->
+<!--            android:layout_marginRight="20dp"-->
+<!--            android:background="@color/bt1_pink"-->
+<!--            android:contentDescription="add"-->
+<!--            android:src="@drawable/ic_search"-->
+<!--            tools:ignore="TouchTargetSizeCheck"-->
 
-            />
-        <ImageButton
-            android:id="@+id/btn_addNS"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="end"
-            android:layout_marginRight="20dp"
-            android:background="@color/bt1_pink"
-            android:contentDescription="search"
-            android:src="@drawable/ic_person_add"
-            tools:ignore="TouchTargetSizeCheck"
+<!--            />-->
+<!--        <ImageButton-->
+<!--            android:id="@+id/btn_addNS"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_gravity="end"-->
+<!--            android:layout_marginRight="20dp"-->
+<!--            android:background="@color/bt1_pink"-->
+<!--            android:contentDescription="search"-->
+<!--            android:src="@drawable/ic_person_add"-->
+<!--            tools:ignore="TouchTargetSizeCheck"-->
 
-            />
+<!--            />-->
 
         <!-- Nội dung khác của thanh công cụ -->
     </com.google.android.material.appbar.MaterialToolbar>
-
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
