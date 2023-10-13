@@ -11,7 +11,6 @@ import com.google.android.material.appbar.MaterialToolbar;
 
 public class PbActivity extends AppCompatActivity {
     MaterialToolbar topAppBarPB;
-    @SuppressLint("RestrictedApi")
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);

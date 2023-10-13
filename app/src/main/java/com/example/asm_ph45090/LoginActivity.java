@@ -38,6 +38,7 @@ public class LoginActivity extends AppCompatActivity {
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.login_activity);
+        //khởi tạo Shared Preferences và editor
         SharedPreferences sharedPreferences = getSharedPreferences("data", MODE_PRIVATE);
         SharedPreferences.Editor editor = sharedPreferences.edit();
 //      Ánh xạ
@@ -72,7 +73,7 @@ public class LoginActivity extends AppCompatActivity {
                         String data = stringBuild.toString();
                         //Cắt chuỗi thành 2 : name:'name' và pass:'pass' sau đó lưu vào parts
                         String[] parts = data.split(",");
-                        //lấy chuỗi name:'name' sau đó căt chuỗi làm 2 và chọn chuỗi 'name'
+                        //lấy chuỗi name:'name' sau đó căt chuỗi làm 2 và sau đó lưu 'name' vào biến
                         name = parts[0].split(":")[1];
                         //tương tự name
                         pass = parts[1].split(":")[1];
