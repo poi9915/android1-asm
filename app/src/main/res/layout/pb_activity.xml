@@ -40,6 +40,8 @@
             <ListView
                 android:id="@+id/lsvPB"
                 android:layout_width="match_parent"
+                android:layout_gravity="center"
+                android:paddingBottom="20dp"
                 android:layout_height="wrap_content"/>
         </LinearLayout>
 

@@ -15,6 +15,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.view.MenuItemCompat;
 
 import com.example.asm_ph45090.Adapter.AdapterNhanSu;
+import com.example.asm_ph45090.Dialog.NsDialog;
 import com.example.asm_ph45090.Model.ModelNhanSu;
 import com.google.android.material.appbar.MaterialToolbar;
 

@@ -92,7 +92,7 @@ public class LoginActivity extends AppCompatActivity {
                     if (cbRemMe.isChecked()) {
                         editor.putBoolean("RememberMe", true);
                     } else {
-                        editor.putBoolean("RememberMe", true);
+                        editor.putBoolean("RememberMe", false);
                     }
                     editor.apply();
 

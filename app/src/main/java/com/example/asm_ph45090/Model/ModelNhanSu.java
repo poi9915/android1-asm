@@ -1,10 +1,10 @@
 package com.example.asm_ph45090.Model;
 
 public class ModelNhanSu {
-    int id;
-    String MaNV;
-    String HoTen;
-    String PhongBan;
+    private int id;
+    private String MaNV;
+    private String HoTen;
+    private String PhongBan;
 
     public ModelNhanSu(int id, String maNV, String hoTen, String phongBan) {
         this.id = id;

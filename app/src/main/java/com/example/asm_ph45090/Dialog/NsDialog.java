@@ -1,4 +1,4 @@
-package com.example.asm_ph45090;
+package com.example.asm_ph45090.Dialog;
 
 import android.app.AlertDialog;
 import android.app.Dialog;
@@ -16,6 +16,7 @@ import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatDialogFragment;
 import androidx.fragment.app.DialogFragment;
 
+import com.example.asm_ph45090.R;
 import com.google.android.material.textfield.TextInputLayout;
 
 public class NsDialog extends AppCompatDialogFragment {

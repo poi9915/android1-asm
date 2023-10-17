@@ -28,7 +28,6 @@ public class AdapterNhanSu extends BaseAdapter {
 
 
     ArrayList<ModelNhanSu> dsNs = new ArrayList<>();
-    ArrayList<ModelNhanSu> filteredList;
     ArrayList<ModelNhanSu> originaList;
 
     public AdapterNhanSu(Context context ,ArrayList<ModelNhanSu> dsNs) {
@@ -98,6 +97,8 @@ public class AdapterNhanSu extends BaseAdapter {
         View view = inflater.inflate(R.layout.dialog_ns_acitvity , null);
         TextInputLayout edNewNsId  = view.findViewById(R.id.edNewNsID);
         TextInputLayout edNewNsName = view.findViewById(R.id.edNewNsName);
+        edNewNsId.getEditText().setText(dsNs.get(id).getMaNV());
+        edNewNsName.getEditText().setText(dsNs.get(id).getHoTen());
         Spinner spinNewPb = view.findViewById(R.id.spinNewPB);
         ArrayAdapter<String> adapter = new ArrayAdapter<>(
                 context,
@@ -105,6 +106,14 @@ public class AdapterNhanSu extends BaseAdapter {
                 new String[]{"Hành chính", "Nhân Sự", "Đào tạo"});
         adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
         spinNewPb.setAdapter(adapter);
+        if (dsNs.get(id).getPhongBan().equals("Hành chính") ){
+            spinNewPb.setSelection(0);
+        }
+        else if (dsNs.get(id).getPhongBan().equals("Nhân Sự") ){
+            spinNewPb.setSelection(1);
+        }else {
+            spinNewPb.setSelection(2);
+        }
         builder.setView(view)
                 .setTitle("Sửa Thông Tin NS")
                 .setNegativeButton("Cancel", new DialogInterface.OnClickListener() {
@@ -138,17 +147,14 @@ public class AdapterNhanSu extends BaseAdapter {
                 } else {
                     List<ModelNhanSu> filteredList = new ArrayList<>();
                     String filterPattern = constraint.toString().toLowerCase().trim();
-
                     for (ModelNhanSu item : dsNs) {
                         if (item.getHoTen().toLowerCase().contains(filterPattern)) {
                             filteredList.add(item);
                         }
                     }
-
                     results.values = filteredList;
                     results.count = filteredList.size();
                 }
-
                 return results;
             }
 
